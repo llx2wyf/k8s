@@ -6,4 +6,5 @@ for imageName in ${images[@]} ; do
 	docker pull llx2wyf/$imageName
   	docker tag llx2wyf/$imageName weaveworks/$imageName
   	docker rmi llx2wyf/$imageName
+	docker save -o ./out/$imageName weaveworks/$imageName
 done

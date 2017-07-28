@@ -6,4 +6,5 @@ for imageName in ${images[@]} ; do
 	docker pull llx2wyf/$imageName
   	docker tag llx2wyf/$imageName gcr.io/google_containers/$imageName
   	docker rmi llx2wyf/$imageName
+	docker save -o out/$imageName gcr.io/google_containers/$imageName
 done

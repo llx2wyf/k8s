@@ -1,3 +1,3 @@
 #!/bin/bash
 
-kubectl get node
+kubectl get node -o wide

@@ -4,3 +4,6 @@ kubectl -n kube-system describe pod kube-dns
 2.部署dashboard
 kubectl create -f https://git.io/kube-dashboard
 
+3.git rm删除子模块, fix "No submodule mapping found in .gitmodules for path 'dashboard/heapster'"
+git ls-files --stage | grep 160000
+
